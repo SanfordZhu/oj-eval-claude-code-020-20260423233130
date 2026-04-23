@@ -91,7 +91,7 @@ int main() {
         printf("Phase 8A: mixed 1\n");
         tCnt = 0;
         for (pgIdx = 0; pgIdx < MAXRANK0PAGE; pgIdx++, q = q + 1024 * 4) {
-            void *r = alloc_pages(1);
+            (void)alloc_pages(1);
         }
         dotOk(query_page_counts(MAXRANK) == 0);
         q = p;
@@ -116,7 +116,7 @@ int main() {
         tCnt = 0;
         q = p;
         for (pgIdx = 0; pgIdx < MAXRANK0PAGE; pgIdx++, q = q + 1024 * 4) {
-            void *r = alloc_pages(1);
+            (void)alloc_pages(1);
         }
         q = p;
         freeCnt = 0;
