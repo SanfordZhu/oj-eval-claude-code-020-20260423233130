@@ -93,7 +93,6 @@ static int split_recursive(int target) {
     pages[idx].allocated = 1;
     free_counts[r]--;
 
-    int sz = 1 << (r - 1);
     int half_sz = 1 << (r - 2);
 
     /* Split into two blocks of rank r-1 */
